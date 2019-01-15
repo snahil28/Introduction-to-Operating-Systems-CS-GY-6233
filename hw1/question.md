@@ -1,22 +1,22 @@
 ## Homework Notes
 
 ## General Notes
-● Read the assignment carefully, including what files to include.
-● Don't assume limitations unless they are explicitly stated.
-● Treat provided examples as just that, not exhaustive list of cases that should work.
-● When in doubt regarding what needs to be done, ask. Another option is test it in the real
+Read the assignment carefully, including what files to include.
+Don't assume limitations unless they are explicitly stated.
+Treat provided examples as just that, not exhaustive list of cases that should work.
+When in doubt regarding what needs to be done, ask. Another option is test it in the real
 UNIX operating system. Does it behave the same way?
-● TEST your solutions, make sure they work. It's obvious when you didn't test the code.
+TEST your solutions, make sure they work. It's obvious when you didn't test the code.
 
 ## Rubric
 Since we had some issues before on homework 1. Here are some of the things we know we will
 test, but these are not the only things we will test. Therefore make sure to test your program
 thoroughly and thoughtfully.
 Total: 100 points
-● -10: Can't specify number of lines when input is from a pipe
-● -10: No exit() at the end of hello.c
-● -10: Does not handle long lines (more than 512 characters)
-● -20: head does not allow specifying nu
+-10: Can't specify number of lines when input is from a pipe
+-10: No exit() at the end of hello.c
+-10: Does not handle long lines (more than 512 characters)
+-20: head does not allow specifying nu
 $ make qemu
 QEMU should appear and show the xv6 command prompt, where you can run programs inside
 xv6. It will look something like:
