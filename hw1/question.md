@@ -1,4 +1,5 @@
 ## Homework Notes
+
 ## General Notes
 ● Read the assignment carefully, including what files to include.
 ● Don't assume limitations unless they are explicitly stated.
@@ -6,6 +7,7 @@
 ● When in doubt regarding what needs to be done, ask. Another option is test it in the real
 UNIX operating system. Does it behave the same way?
 ● TEST your solutions, make sure they work. It's obvious when you didn't test the code.
+
 ## Rubric
 Since we had some issues before on homework 1. Here are some of the things we know we will
 test, but these are not the only things we will test. Therefore make sure to test your program
@@ -106,6 +108,7 @@ To create a typeset version of the code, run "make xv6.pdf". This
 requires the "mpage" utility. See http://www.mesa.nl/pub/mpage/.
 The above command searches for all instances of the word the in the file README , and then
 prints the first 10 matching lines.
+
 ## Hints:
 1. Many aspects of this are similar to the wc program: both can read from standard input if
 no arguments are passed or read from a file if one is given on the command line. Reading
@@ -123,7 +126,8 @@ but is implemented for a modern x86-based multiprocessor using ANSI
 C.
 If the number of lines is not given (i.e., if the first argument does not start with - ), the number of
 lines to be printed should default to 10 as in the previous part.
-Hints:
+
+## Hints:
 1. You can convert a string to an integer with the atoi function.
 2. You may want to use pointer arithmetic (discussed in class in Lecture 2) to get a string
 suitable for passing to atoi.
