@@ -1,30 +1,33 @@
-Homework Notes
-General Notes
-● Read the assignment carefully, including what files to include.
-● Don't assume limitations unless they are explicitly stated.
-● Treat provided examples as just that, not exhaustive list of cases that should work.
-● When in doubt regarding what needs to be done, ask. Another option is test it in the real
+## Homework Notes
+
+## General Notes
+Read the assignment carefully, including what files to include.
+Don't assume limitations unless they are explicitly stated.
+Treat provided examples as just that, not exhaustive list of cases that should work.
+When in doubt regarding what needs to be done, ask. Another option is test it in the real
 UNIX operating system. Does it behaves the same way?
-● TEST your solutions, make sure they work. It's obvious when you didn't test the code.
-Homework 2 Notes
-● This assignment does not involve modifying or using xv6 (although the code for
+TEST your solutions, make sure they work. It's obvious when you didn't test the code.
+
+## Homework 2 Notes
+This assignment does not involve modifying or using xv6 (although the code for
 Shell.c is adapted from the xv6 shell).
-● You should write, compile, a
-● While it may be tempting to just copy xv6's implementation, there are enough differences
+You should write, compile, a
+While it may be tempting to just copy xv6's implementation, there are enough differences
 between the xv6 APIs and those in Linux/macOS that doing so would be a bad idea. You
 can look at how it works for inspiration though.
-Rubric
+
+## Rubric
 Since we had some issues on homework 2. Here are some of the things we know we will test, but
 these are not the only things we will test. Therefore make sure to test your program thoroughly
 and thoughtfully.
 Total: 100 points
-● Program does not compile (-90)
-● stdin redirection not working (-30)
-● stdout redirection not working (-30)
-● pipe not working (-40)
-● exec not working (-30)
-● bad permissions on redirected output (-10)
-● "not implemented" messages left in (-5)
+Program does not compile (-90)
+stdin redirection not working (-30)
+stdout redirection not working (-30)
+pipe not working (-40)
+exec not working (-30)
+bad permissions on redirected output (-10)
+"not implemented" messages left in (-5)
 Due Date: March 25th, 2018 at 11:55 pm
 In this assignment, you will implement pieces of a UNIX shell, and get some familiarity with
 some UNIX library calls and the UNIX process model. By the end of the assignment, you will
@@ -60,7 +63,8 @@ found in section 3, we will say exec(3)).
 Once this is done, you should be able to use your shell to run single commands, such as
 cs6233> ls
 cs6233> grep cat /usr/share/dict/words
-Hint:
+
+## Hint:
 1. You will notice that there are many variants on exec(3). You should read through the
 differences between them, and then choose the one that allows you to run the commands
 above -- in particular, pay attention to whether the version of exec you're using requires
@@ -72,7 +76,8 @@ input on standard input and will write to standard output, so you will have to o
 then replace standard input or output with that file. As before, the parser already recognizes the
 '>' and '<' characters and builds a redircmd structure for you, so you just need to use the
 information in that redircmd to open a file and replace standard input or output with it.
-Hints:
+
+## Hints:
 1. Look at the dup2(2) and open(2) calls.
 2. The file descriptor the program is currently using for input or output is available in
 rcmd->fd.
@@ -86,7 +91,8 @@ cs6233> sort -r < a.txt
 Problem 3: Pipes (40 points)
 The final task is to add the ability to pipe the output of one command into the input of another.
 You will fill out the code for the '|' case of the switch statement in runcmd to do this.
-Hints:
+
+## Hints:
 1. The parser provides the left command in pcmd->left and the right command in pcmd-
 >right .
 2. Look at the fork(2), pipe(2), close(2) and wait(2) calls.
