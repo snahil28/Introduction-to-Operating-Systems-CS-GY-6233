@@ -47,7 +47,7 @@ is where you will implement the functionality to make the shell actually work.
 Next, try to compile the source code to the shell:
 $ gcc shell.c -o shell
 You can then run and interact with the shell by typing ./shell :
-user@cs6233:~$ ./shell
+user@cs6233 : ~$ ./shell
 cs6233> ls
 exec not implemented
 cs6233>
@@ -127,10 +127,10 @@ close(filedes);
 }
 If you put that code into a file, compile it, and then run the resulting program, you should
 see a result like:
-user@cs6233:~$ ./a.out
+user@cs6233 : ~$ ./a.out
 This is the parent process, my process ID is 56968 and my child
 is 56969 Hello, I'm in the child, my process ID is 56969
-user@cs6233:~$ cat myfile.txt
+user@cs6233: ~$ cat myfile.txt
 Process 2
 Process 1
 You can see that both the parent and child process both got a copy of "filedes", and that
