@@ -1,13 +1,15 @@
-Homework Notes
-General Notes
-● Read the assignment carefully, including what files to include.
-● Don't assume limitations unless they are explicitly stated.
-● Treat provided examples as just that, not exhaustive list of cases that should work.
-● When in doubt regarding what needs to be done, ask. Another option is test it in the real
+## Homework Notes
+
+## General Notes
+Read the assignment carefully, including what files to include.
+Don't assume limitations unless they are explicitly stated.
+Treat provided examples as just that, not exhaustive list of cases that should work.
+When in doubt regarding what needs to be done, ask. Another option is test it in the real
 UNIX operating system. Does it behaves the same way?
-● TEST your solutions, make sure they work. It's obvious when you didn't test the code.
+TEST your solutions, make sure they work. It's obvious when you didn't test the code.
 Due Date: April 9
-Preliminaries
+
+## Preliminaries
 In this assignment, we will go back to using xv6.
 Start by getting a modified version of the xv6 source code from github.
 $ git clone https://github.com/gussand/xv6-public.git
@@ -35,7 +37,8 @@ rtcdate structure (you can see how struct rtcdate is defined by looking at
 date.h).
 3. It contains a program designed to test the lottery scheduler you will develop, in the source
 file lotterytest.c.
-Important Note
+
+## Important Note
 For simplicity in testing, you should run the tests for this assignment in QEMU with just one
 CPU. You can do this by invoking the Makefile as:
 make qemu CPUS=1
@@ -129,7 +132,8 @@ spin with 20 tickets ended at 17 hours 22 minutes 32 seconds
 You can see that the process with 80 tickets finished after 6 seconds, while the process with 20
 tickets finished after 10 seconds. You can also play with the numbers in lotterytest to see
 the effect of varying the number of tickets.
-Hints:
+
+## Hints:
 1. One possible way to track the total number of tickets is by carefully finding each place
 where the process state changes, and adding or subtracting tickets from a global as
 appropriate. However, this is actually rather tricky to get right. An alternative is to simply
